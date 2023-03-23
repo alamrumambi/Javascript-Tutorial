@@ -78,7 +78,7 @@ Berikut ini adalah contoh cara read dan write file JSON menggunakan `fs.readFile
 const fs = require('fs');
 
 // Membaca file JSON dengan fs.readFileSync
-const data = fs.readFileSync('data.json');
+const data = fs.readFileSync('data.json', 'utf-8');
 const obj = JSON.parse(data);
 
 console.log(obj);
@@ -87,7 +87,7 @@ console.log(obj);
 obj.data.push('contoh data baru');
 
 // Menulis kembali file JSON dengan fs.writeFileSync
-fs.writeFileSync('data.json', JSON.stringify(obj));
+fs.writeFileSync('data.json', JSON.stringify(obj, null, 2));
 ```
 
 Pada contoh di atas, kita membaca file JSON dengan menggunakan `fs.readFileSync` dan kemudian mem-parse data JSON yang telah dibaca menjadi sebuah objek JavaScript. Kemudian kita menambahkan data baru pada objek tersebut. Setelah itu, kita menulis kembali file JSON dengan menggunakan `fs.writeFileSync`.
