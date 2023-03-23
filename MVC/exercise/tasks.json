@@ -1,0 +1,20 @@
+{
+    "tasks": [
+      {
+        "id": 1,
+        "name": "Buy groceries",
+        "status": "Incomplete"
+      },
+      {
+        "id": 2,
+        "name": "Pay bills",
+        "status": "Incomplete"
+      },
+      {
+        "id": 3,
+        "name": "Do laundry",
+        "status": "Complete"
+      }
+    ]
+}
+  
